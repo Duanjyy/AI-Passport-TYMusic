@@ -1,6 +1,6 @@
 # TY MUSIC 音乐盒
 
-基于 FoloToy ai-passport（ESP32-C3）硬件定制的**网络音乐播放器**固件。设备连接 2.4GHz WiFi 后，从网易云音乐 / QQ音乐 / 酷狗 / 酷我的公开歌单拉取曲目列表，通过 Meting API 解析音频流，本机软解 MP3 播放，屏幕以复古电台风 UI 展示。
+基于 FoloToy ai-passport（ESP32-C3）硬件定制的**网络音乐播放器**固件。设备连接 2.4GHz WiFi 后，从音乐的公开歌单拉取曲目列表，通过 Meting API 解析音频流，本机软解 MP3 播放，屏幕以复古电台风 UI 展示。
 
 ## 功能
 
@@ -52,7 +52,7 @@ esptool.py --chip esp32c3 --port COM3 --baud 115200 write_flash 0x0 FoloToy-AI-P
 5. 选择音源平台，填入**歌单 ID**（Meting API 留空用默认）
 6. 点「保存并重启」，约 20 秒后设备自动连网开播
 
-**歌单 ID 获取**：网易云网页版打开任意歌单，地址栏 `music.163.com/playlist?id=______` 中的数字即为歌单 ID。
+**歌单 ID 获取**：音乐平台网页版打开任意歌单，地址栏 `音乐平台/playlist?id=______` 中的数字即为歌单 ID。
 
 ### 3. 按键操作
 
